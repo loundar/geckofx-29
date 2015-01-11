@@ -3,7 +3,7 @@ Download Xulrunner 29
 http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/29.0/
 
 ```c#
-Skybound.Gecko.Xpcom.Initialize(pathtoXUL);
+        Gecko.Xpcom.Initialize(pathtoXUL);
 ```
 
 Or
