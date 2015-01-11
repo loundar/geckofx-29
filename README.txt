@@ -6,6 +6,15 @@ http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/29.0/
 Skybound.Gecko.Xpcom.Initialize(pathtoXUL);
 ```
 
+Or
+```c#
+        string DIR_PROFILE = @"path\to\AppData\Roaming\Mozilla\Firefox\Profiles\randomstring.default";
+        string DIR_MOZILLA = @"C:\Program Files (x86)\Mozilla Firefox"; 
+        string PREFERENCE_GECKO = Path.Combine(DIR_PROFILE,@"pref.js");
+
+            Gecko.Xpcom.ProfileDirectory = DIR_PROFILE;
+            Gecko.GeckoPreferences.Load(PREFERENCE_GECKO);
+            Gecko.Xpcom.Initialize(DIR_MOZILLA);```
 
 Geckofx is licensed under the Mozilla Public License Version.
 
