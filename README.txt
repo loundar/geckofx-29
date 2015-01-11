@@ -12,9 +12,10 @@ Or
         string DIR_MOZILLA = @"C:\Program Files (x86)\Mozilla Firefox"; 
         string PREFERENCE_GECKO = Path.Combine(DIR_PROFILE,@"pref.js");
 
-            Gecko.Xpcom.ProfileDirectory = DIR_PROFILE;
-            Gecko.GeckoPreferences.Load(PREFERENCE_GECKO);
-            Gecko.Xpcom.Initialize(DIR_MOZILLA);```
+        Gecko.Xpcom.ProfileDirectory = DIR_PROFILE;
+        Gecko.GeckoPreferences.Load(PREFERENCE_GECKO);
+        Gecko.Xpcom.Initialize(DIR_MOZILLA);
+```
 
 Geckofx is licensed under the Mozilla Public License Version.
 
